@@ -1,0 +1,6 @@
+{
+    "build-widget": {
+        "prefix": "ref",
+        "widgets": ["src/widgets/Hero"]
+    }
+}
