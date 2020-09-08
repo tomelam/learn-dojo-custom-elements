@@ -1,6 +1,6 @@
 # learn-dojo-custom-elements
 
-This project attemps to follow the "Dojo Custom Elements Guide at
+This project attemps to follow the "Dojo Custom Elements Guide" at
 https://dojo.io/learn/custom-elements/introduction .
 
 ## Create the HTML
@@ -16,7 +16,8 @@ Its content is
   <body>
     <script async src="ref-hero.js"></script>
   </body>
-</html>```
+</html>
+```
 
 ## Create the widget
 
