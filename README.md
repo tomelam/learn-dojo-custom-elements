@@ -9,7 +9,8 @@ The file `index.html` was created and put into the directory `src`,
 guessed from copying the location of the working application example
 https://github.com/tomelam/learn-dojo-custom-elements .
 Its content is
-```<html>
+```
+<html>
   <head>
     <link rel="stylesheet" href="ref-hero.css">
   </head>
@@ -24,7 +25,8 @@ Its content is
 The file `Hero.tsx` was created and put into the directory `src/widgets`,
 relative to the current directory, where the `.dojorc` file will also be put.
 Its content is
-```import { create, tsx } from '@dojo/framework/core/vdom';
+```
+import { create, tsx } from '@dojo/framework/core/vdom';
 import * as css from './styles/Hero.m.css';
 
 export interface HeroProperties {
@@ -49,7 +51,8 @@ export default factory(function Hero({ properties }) {
 
 The file `.dojorc` was created and put into the current directory.
 Its content is
-```{
+```
+{
     "build-widget": {
         "prefix": "ref",
         "widgets": ["src/widgets/Hero"]
