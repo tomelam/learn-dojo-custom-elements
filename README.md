@@ -42,7 +42,8 @@ export default factory(function Hero({ properties }) {
             <h1 classes={css.title}>{title}</h1>
         </div>
     );
-});```
+});
+```
 
 ## Configure the building of the widget as a custom element
 
@@ -53,4 +54,5 @@ Its content is
         "prefix": "ref",
         "widgets": ["src/widgets/Hero"]
     }
-}```
+}
+```
