@@ -81,16 +81,14 @@ a Dojo widget library scaffold using the command
 `dojo create widget --name learn-dojo-custom-elements`.
 
 3. Run `build.sh` to compile the widget into a custom element.
-The directory `output` will be created.
+The directory `output` will be created under the project's main directory.
 
-dojo create widget --name hero-widget-lib
+4. Create a web page using the custom element.
 
-## Create the HTML
+## Second example - write the HTML
 
-The file `index.html` was created and put into the directory `src`,
-guessed from copying the location of the working application example
-https://github.com/tomelam/learn-dojo-custom-elements .
-Its content is
+Create a file `index.html` in the directory `src` in the project directory.
+Let its content be
 ```
 <html>
   <head>
@@ -102,10 +100,10 @@ Its content is
 </html>
 ```
 
-## Create the widget
+## Second example - write the widget
 
-The file `Hero.tsx` was created and put into the directory `src/widgets`,
-relative to the current directory, where the `.dojorc` file will also be put.
+Create the file `Hero.tsx` in the directory `src/widgets`,
+in the project directory, where the `.dojorc` file will also be put.
 Its content is
 ```
 import { create, tsx } from '@dojo/framework/core/vdom';
@@ -129,15 +127,14 @@ export default factory(function Hero({ properties }) {
 });
 ```
 
-## Configure the building of the widget as a custom element
+## Second example - check the configuration
 
-The file `.dojorc` was created and put into the current directory.
-Its content is
+Check the configuration file to be sure it is set up for building the widget
+as a custom element.
+It should contain the stanza
 ```
-{
-    "build-widget": {
-        "prefix": "ref",
-        "widgets": ["src/widgets/Hero"]
-    }
+"build-widget": {
+    "prefix": "ref",
+    "widgets": ["src/widgets/Hero"]
 }
 ```
