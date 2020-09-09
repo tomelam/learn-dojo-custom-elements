@@ -2,18 +2,20 @@
 
 This project attempts to follow the
 ["Dojo Custom Elements
-Guide"](https://dojo.io/learn/custom-elements/introduction).
-The guide is a bit hard to notice if the web browser's window width
-is less than about 1,130 pixels.
-At browser widths more than about 1,130 pixels the second-level
-navigation list moves from the top to the left side.
-That document might not be a complete tutorial, but
-be sure to visit all the subsections ("Introduction",
+Guide"](https://dojo.io/learn/custom-elements/introduction)
+and possibly fill in some gaps in that guide to constitute a quickstart guide.
+The guide is a bit hard to find on the [Dojo website](https://dojo.io/)
+if the web browser's window width is less than about 1,130 pixels,
+but increasing the browser width to more than about 1,130 pixels
+causes the second-level navigation list to move from the top to the left side,
+where it is easy to notice.
+The guide might not be a complete tutorial, but
+be sure to visit all its subsections ("Introduction",
 "Setting a Widget's Properties", "Custom Element Slots", and "Using Themes")
-of the "Dojo Custom Elements Guide" in the third-level navigation list
-at the top or right of the page.
+in the third-level navigation list at the top or right side of the page.
 See the discussion at
 https://discord.com/channels/471607790213922816/471607790213922818/752980268930957422 .
+
 Other documents that might help are:
 
 1. https://dojo.io/learn/overview/components-of-a-dojo-application
@@ -76,9 +78,9 @@ but gives a link to the CLI command module
 [@dojo/cli-create-widget](https://github.com/dojo/cli-create-widget),
 which holds the code and documentation for the `dojo create widget` command.
 
-## A quickstart to creating and building Dojo custom elements
+## A quickstart guide to creating a widget-project scaffold and building an example widget
 
-Follow the following steps in the current directory.
+Follow these steps in the current directory:
 
 1. Run `check-tools.sh` in the current directory to check whether Node,
 `@dojo/cli-create-widget`, and `typescript` have been installed so
@@ -91,12 +93,18 @@ The command will create a widget template for the building of a Button widget.
 The output code can be used as a template to help programmers write
 other widgets.
 
-3. Run `build.sh` to compile the widget into a custom element.
+4. Run `build.sh` to compile the widget into a custom element.
 The directory `output` will be created under the project's main directory.
 
-4. Create a web page using the custom element.
+5. Create a web page using the custom element.
 
-## Second example - write the HTML
+## Use the scaffold for a new widget
+
+This example attempts to follow the ["Dojo Custom Elements
+Guide"](https://dojo.io/learn/custom-elements/introduction),
+but it doesn't work.
+
+### Use the scaffold for a new widget - write the HTML
 
 Create a file `index.html` in the directory `src` in the project directory.
 Let its content be
@@ -111,7 +119,7 @@ Let its content be
 </html>
 ```
 
-## Second example - write the widget
+## Use the scaffold for a new widget - write the widget
 
 Create the file `Hero.tsx` in the directory `src/widgets`,
 in the project directory, where the `.dojorc` file will also be put.
@@ -138,7 +146,7 @@ export default factory(function Hero({ properties }) {
 });
 ```
 
-## Second example - check the configuration
+### Use the scaffold for a new widget - check the configuration
 
 Check the configuration file to be sure it is set up for building the widget
 as a custom element.
