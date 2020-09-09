@@ -25,8 +25,8 @@ if ! npm list -g @dojo/cli-create-widget > /dev/null ; then
   echo "@dojo/cli-create-widget not installed globally."
   echo "Please install it first:"
   echo "  npm i -g @dojo/cli-create-widget"
-  echo "This notification would have occurred anyway if you had straightaway"
-  echo "  run 'dojo create widget'."
+  echo "A similar notification would have occurred anyway if you had"
+  echo "  straightaway run 'dojo create widget'."
   exit 3
 fi
 

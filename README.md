@@ -10,15 +10,19 @@ Other documents that might help are:
 
 1. https://dojo.io/learn/overview/components-of-a-dojo-application
 2. https://github.com/dojo/cli-build-widget
-3. https://dojo.io/learn/creating-widgets/introduction Be sure to visit all the subsections ("Widget fundamentals, Rendering widgets, Configuring widgets through properties, Enabling interactivity, Managing state, Best practic development)
-of the "creating Widgets Guide" in the third-level navigation list at the top or right of the page.
+3. https://dojo.io/learn/creating-widgets/introduction
+Be sure to visit all the subsections (Widget fundamentals, Rendering widgets,
+Configuring widgets through properties, Enabling interactivity, Managing state,
+Best practice development)
+of the "creating Widgets Guide" in the third-level navigation list
+at the top or right of the page.
 4. https://dojo.io/blog/version-7-dojo
 5. https://next.dojo.io/blog/version-7-dojo
 6. https://dojo.io/blog/version-7-dojo-widgets
 7. https://dojo.io/blog/version-6-dojo
 8. https://github.com/dojo/cli
 
-## Create a widget library scaffold
+## Create a Dojo widget library scaffold
 
 The "Building Custom Elements" section in the
 ["Dojo Custom Elements
@@ -36,7 +40,7 @@ suggested creating a widget library scaffold as follows:
 He said "At that point you should [have] a skeleton project
 that you can build widgets from using the scripts defined in the package json.
 These scripts are run by calling npm run followed by the script name."
-Here is the "scripts" section of package.json created by running
+Here is the "scripts" section of `package.json` created by running
 `dojo create widget --name my-widget-lib`:
 ```
 "scripts": {
@@ -66,26 +70,18 @@ which holds the code and documentation for the `dojo create widget` command.
 
 ## A quickstart to building Dojo custom elements
 
-Each of the following scripts in the current directory checks prerequisite
-setup and, if the setup has been done, executes a command from the
-"Dojo Building Guide" or notifies the user about the setup.
-They are meant to be executed in the order given here.
+Follow the following steps in the current directory.
 
-1. `check-tools.sh` in the current project checks whether Node,
-`@dojo/cli-create-app`, and `typescript` have been installed so
+1. Run `check-tools.sh` in the current directory to check whether Node,
+`@dojo/cli-create-widget`, and `typescript` have been installed so
 that they can be used in the project.
 
-2. `build.sh` initializes the current project using the command
+2. Run `create.sh` in the current directory to create
+a Dojo widget library scaffold using the command
 `dojo create widget --name learn-dojo-custom-elements`.
 
-3. `build-dist.sh` creates an application bundle and outputs the results
-to the `output/dist` directory.
-
-4. `serve-and-watch.sh` starts a web server on port 9999 and makes Dojo's
-build tool rebuild the application whenever when the application's
-source files change.
-
-5. `test.sh` runs the application's unit and functional tests.
+3. Run `build.sh` to compile the widget into a custom element.
+The directory `output` will be created.
 
 dojo create widget --name hero-widget-lib
 
