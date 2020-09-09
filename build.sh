@@ -4,11 +4,11 @@
 
 echo "Building an example Dojo widget as a custom element ..."
 
-if [[ ! -d learn-dojo-custom-elements ]] ; then
+if [[ ! -d learn ]] ; then
   echo "Run ./create.sh first."
   exit 1
 fi
 
-cd learn-dojo-custom-elements
+cd learn
 
 dojo build widget

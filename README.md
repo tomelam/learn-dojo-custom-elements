@@ -3,7 +3,15 @@
 This project attempts to follow the
 ["Dojo Custom Elements
 Guide"](https://dojo.io/learn/custom-elements/introduction).
-That document might not be a complete tutorial.
+The guide is a bit hard to notice if the web browser's window width
+is less than about 1,130 pixels.
+At browser widths more than about 1,130 pixels the second-level
+navigation list moves from the top to the left side.
+That document might not be a complete tutorial, but
+be sure to visit all the subsections ("Introduction",
+"Setting a Widget's Properties", "Custom Element Slots", and "Using Themes")
+of the "Dojo Custom Elements Guide" in the third-level navigation list
+at the top or right of the page.
 See the discussion at
 https://discord.com/channels/471607790213922816/471607790213922818/752980268930957422 .
 Other documents that might help are:
@@ -11,9 +19,9 @@ Other documents that might help are:
 1. https://dojo.io/learn/overview/components-of-a-dojo-application
 2. https://github.com/dojo/cli-build-widget
 3. https://dojo.io/learn/creating-widgets/introduction
-Be sure to visit all the subsections (Widget fundamentals, Rendering widgets,
-Configuring widgets through properties, Enabling interactivity, Managing state,
-Best practice development)
+Be sure to visit all the subsections ("Widget fundamentals",
+"Rendering widgets", "Configuring widgets through properties",
+"Enabling interactivity", "Managing state", "Best practice development")
 of the "creating Widgets Guide" in the third-level navigation list
 at the top or right of the page.
 4. https://dojo.io/blog/version-7-dojo
@@ -68,7 +76,7 @@ but gives a link to the CLI command module
 [@dojo/cli-create-widget](https://github.com/dojo/cli-create-widget),
 which holds the code and documentation for the `dojo create widget` command.
 
-## A quickstart to building Dojo custom elements
+## A quickstart to creating and building Dojo custom elements
 
 Follow the following steps in the current directory.
 
@@ -77,8 +85,11 @@ Follow the following steps in the current directory.
 that they can be used in the project.
 
 2. Run `create.sh` in the current directory to create
-a Dojo widget library scaffold using the command
+a Dojo widget template using the command
 `dojo create widget --name learn-dojo-custom-elements`.
+The command will create a widget template for the building of a Button widget.
+The output code can be used as a template to help programmers write
+other widgets.
 
 3. Run `build.sh` to compile the widget into a custom element.
 The directory `output` will be created under the project's main directory.
