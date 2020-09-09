@@ -11,4 +11,6 @@ fi
 
 cd learn
 
-dojo build widget
+# dojo build widget
+
+npm run build

@@ -2,28 +2,32 @@
 
 This project attempts to follow the
 ["Dojo Custom Elements
-Guide"](https://dojo.io/learn/custom-elements/introduction)
-and possibly fill in some gaps in that guide to constitute a quickstart guide.
+Guide"](https://dojo.io/learn/custom-elements/introduction),
+and possibly fill in some gaps in it to constitute a quickstart example project.
+It is believed to be accurate as of September 9, 2020,
+but the guide will probably evolve quickly.
 The guide is a bit hard to find on the [Dojo website](https://dojo.io/)
 if the web browser's window width is less than about 1,130 pixels,
 but increasing the browser width to more than about 1,130 pixels
 causes the second-level navigation list to move from the top to the left side,
-where it is easy to notice.
+where the link to the guide is easy to notice.
 The guide might not be a complete tutorial, but
 be sure to visit all its subsections ("Introduction",
 "Setting a Widget's Properties", "Custom Element Slots", and "Using Themes")
 in the third-level navigation list at the top or right side of the page.
-See the discussion at
-https://discord.com/channels/471607790213922816/471607790213922818/752980268930957422 .
+A discussion at
+https://discord.com/channels/471607790213922816/471607790213922818/752980268930957422
+might fill in some gaps.
 
-Other documents that might help are:
+Other documents that might help to learn how to work with
+Dojo custom elements are:
 
 1. https://dojo.io/learn/overview/components-of-a-dojo-application
 2. https://github.com/dojo/cli-build-widget
 3. https://dojo.io/learn/creating-widgets/introduction
-Be sure to visit all the subsections ("Widget fundamentals",
+Be sure to visit all the subsections ("Introduction", "Widget fundamentals",
 "Rendering widgets", "Configuring widgets through properties",
-"Enabling interactivity", "Managing state", "Best practice development")
+"Enabling interactivity", "Managing state", and "Best practice development")
 of the "creating Widgets Guide" in the third-level navigation list
 at the top or right of the page.
 4. https://dojo.io/blog/version-7-dojo
@@ -77,8 +81,11 @@ does not mention how to use the command `dojo create widget`,
 but gives a link to the CLI command module
 [@dojo/cli-create-widget](https://github.com/dojo/cli-create-widget),
 which holds the code and documentation for the `dojo create widget` command.
+However, in this project Anthony Gubler's advice to call
+`npm run <script-name>` is followed, which anyway calls `dojo create widget`
+if called as `npm run build`.
 
-## A quickstart guide to creating a widget-project scaffold and building an example widget
+## A quickstart to creating a widget-project scaffold and building an example widget
 
 Follow these steps in the current directory:
 

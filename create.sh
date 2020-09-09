@@ -4,6 +4,6 @@
 
 echo "Building an example Dojo widget ..."
 
-echo "Create a widget library skeleton project using cli-create-widget ..."
+echo "Create a skeleton widget project using cli-create-widget ..."
 
 dojo create widget --name learn
