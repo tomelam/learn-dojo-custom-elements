@@ -1,4 +1,5 @@
 #!/usr/bin/env bash 
+
 echo "Checking tools for building a Dojo widget ..."
 
 echo "Checking availability of Node ..."
@@ -20,43 +21,18 @@ if ! npm list -g @dojo/cli > /dev/null ; then
   exit 2
 fi
 
-if ! npm list -g @dojo/cli-create-app > /dev/null ; then
-  echo "@dojo/cli-create-app not installed globally. Please install it first:"
-  echo "npm i -g @dojo/cli-create-app"
-  exit 4
-fi
-
-if ! npm list @dojo/cli-create-app > /dev/null ; then
-  echo "@dojo/cli-create-app not installed locally. Please install it first:"
-  echo "npm i @dojo/cli-create-app"
-  exit 4
-fi
-
-if ! npm list -g @dojo/cli-build-widget > /dev/null ; then
-  echo "@dojo/cli-build-widget not installed globally. Please install it first:"
-  echo "  npm i -g @dojo/cli-build-widget"
+if ! npm list -g @dojo/cli-create-widget > /dev/null ; then
+  echo "@dojo/cli-create-widget not installed globally."
+  echo "Please install it first:"
+  echo "  npm i -g @dojo/cli-create-widget"
   echo "This notification would have occurred anyway if you had straightaway"
-  echo "run 'dojo build widget'."
-  exit 3
-fi
-
-if ! npm list @dojo/cli-build-widget > /dev/null ; then
-  echo "@dojo/cli-build-widget not installed locally. Please install it first:"
-  echo "  npm i @dojo/cli-build-widget"
-  echo "This notification would have occurred anyway if you had straightaway"
-  echo "run 'dojo build widget'."
+  echo "  run 'dojo create widget'."
   exit 3
 fi
 
 if ! npm list -g typescript > /dev/null ; then
   echo "typescript not installed globally. Please install it first:"
-  echo "npm i -g typescript"
-  exit 3
-fi
-
-if ! npm list typescript > /dev/null ; then
-  echo "typescript not installed locally. Please install it first:"
-  echo "npm i typescript"
+  echo "  npm i -g typescript"
   exit 3
 fi
 

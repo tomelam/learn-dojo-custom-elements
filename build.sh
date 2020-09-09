@@ -2,6 +2,8 @@
 
 # See https://dojo.io/learn/building/introduction
 
-echo "Building the Hero widget ..."
+echo "Building an example Dojo widget ..."
 
-dojo build widget
+echo "Create a widget library skeleton project using cli-create-widget ..."
+
+dojo create widget --name learn-dojo-custom-elements
