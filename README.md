@@ -2,6 +2,24 @@
 
 This project attemps to follow the "Dojo Custom Elements Guide" at
 https://dojo.io/learn/custom-elements/introduction .
+That document might not be a complete introduction.
+See the discussion at
+https://discord.com/channels/471607790213922816/471607790213922818/752980268930957422 .
+Other documents that might help are:
+
+1. https://github.com/dojo/cli-build-widget
+2. https://dojo.io/learn/creating-widgets/introduction
+3. https://dojo.io/blog/version-7-dojo
+4. https://next.dojo.io/blog/version-7-dojo
+
+## Create a scaffold skeleton widget library
+
+The section "Building Custom Elements" in the "Dojo Custom Elements Guide"
+says "Dojo widgets can be built as custom elements
+using the `@dojo/cli-build-widget` command",
+but does not say how to create a Dojo widget.
+
+dojo create widget --name hero-widget-lib
 
 ## Create the HTML
 
