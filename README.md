@@ -18,7 +18,7 @@ The section "Building Custom Elements" in the "Dojo Custom Elements Guide"
 says "Dojo widgets can be built as custom elements
 using the `@dojo/cli-build-widget` command,"
 but does not say how to create a Dojo widget.
-Antody Gluber (@agluber on
+Anthony Gubler (@agluber on
 [the Dojo channel on Discord](https://discord.com/channels/471607790213922816/471607790213922818); https://github.com/agubler)
 suggested creating a scaffold skeleton widget library as follows:
 ``  npm i -g cli-create-widget
