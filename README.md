@@ -104,6 +104,8 @@ other widgets.
 The directory `output` will be created under the project's main directory.
 
 5. Create a web page using the custom element.
+In this directory, the file `button-example.html` uses the `learn` widget
+as a custom element.
 
 ## Use the scaffold for a new widget
 
