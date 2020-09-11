@@ -95,7 +95,7 @@ that they can be used in the project.
 
 2. Run `create.sh` in the current directory to create
 a Dojo widget template using the command
-`dojo create widget --name learn-dojo-custom-elements`.
+`dojo create widget --name learn`.
 The command will create a widget template for the building of a Button widget.
 The output code can be used as a template to help programmers write
 other widgets.
@@ -155,8 +155,9 @@ export default factory(function Hero({ properties }) {
 
 ### Use the scaffold for a new widget - check the configuration
 
-Check the configuration file to be sure it is set up for building the widget
-as a custom element.
+After following the quickstart steps above,
+edit the configuration file, `learn/.dojorc`
+to set it up for building the widget as a custom element.
 It should contain the stanza
 ```
 "build-widget": {
