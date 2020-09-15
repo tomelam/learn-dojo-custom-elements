@@ -2,8 +2,8 @@
 
 This project attempts to follow the
 ["Dojo Custom Elements
-Guide"](https://dojo.io/learn/custom-elements/introduction),
-and possibly fill in some gaps in it to constitute a quickstart example project.
+Guide"](https://dojo.io/learn/custom-elements/introduction)
+and fill in some gaps in it to constitute a quickstart example project.
 It is believed to be accurate as of September 9, 2020,
 but the guide will probably evolve quickly.
 The guide is a bit hard to find on the [Dojo website](https://dojo.io/)
