@@ -19,7 +19,7 @@ A discussion at
 https://discord.com/channels/471607790213922816/471607790213922818/752980268930957422
 might fill in some gaps.
 
-See the file REFERENCES.md in this project for related information.
+See the file `REFERENCES.md` in this project for related information.
 
 ## Create a Dojo widget library scaffold
 
