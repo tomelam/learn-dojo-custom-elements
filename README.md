@@ -19,22 +19,7 @@ A discussion at
 https://discord.com/channels/471607790213922816/471607790213922818/752980268930957422
 might fill in some gaps.
 
-Other documents that might help to learn how to work with
-Dojo custom elements are:
-
-1. https://dojo.io/learn/overview/components-of-a-dojo-application
-2. https://github.com/dojo/cli-build-widget
-3. https://dojo.io/learn/creating-widgets/introduction
-Be sure to visit all the subsections ("Introduction", "Widget fundamentals",
-"Rendering widgets", "Configuring widgets through properties",
-"Enabling interactivity", "Managing state", and "Best practice development")
-of the "creating Widgets Guide" in the third-level navigation list
-at the top or right of the page.
-4. https://dojo.io/blog/version-7-dojo
-5. https://next.dojo.io/blog/version-7-dojo
-6. https://dojo.io/blog/version-7-dojo-widgets
-7. https://dojo.io/blog/version-6-dojo
-8. https://github.com/dojo/cli
+See the file REFERENCES.md in this project for related information.
 
 ## Create a Dojo widget library scaffold
 
